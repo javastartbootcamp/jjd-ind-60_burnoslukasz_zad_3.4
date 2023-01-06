@@ -16,7 +16,7 @@ public class SpecialOffer {
     }
 
     void showOfferInfo() {
-        System.out.println("Rabat na produkt 20%");
+        System.out.println("Rabat:");
         System.out.println("Promcja na: " + product.name + "/ Opis: " + description + "/ Czas promocji: " +
                 promotionTime + " dni/ Cena po rabacie: " + getDiscountPrice() + "zł" + "\n");
     }
