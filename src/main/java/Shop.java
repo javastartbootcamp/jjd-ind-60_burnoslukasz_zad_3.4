@@ -4,7 +4,7 @@ public class Shop {
         Category category2 = new Category("Łagodne", "Delikatny smak");
 
         Product product1 = new Product("Musztarda", 10, "Bardzo ostra, francuska", category1);
-        SpecialOffer offer1 = new SpecialOffer(product1, "Promo w tym tygodniu", 7, 0.4);
+        SpecialOffer offer1 = new SpecialOffer(product1, "Promo w tym tygodniu", 7, 0.2);
         product1.showInfo();
         offer1.showOfferInfo();
 
