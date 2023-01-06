@@ -4,10 +4,9 @@ public class Shop {
         Category category2 = new Category("Łagodne", "Delikatny smak");
 
         Product product1 = new Product("Musztarda", 10, "Bardzo ostra, francuska", category1);
-        SpecialOffer offer1 = new SpecialOffer(product1, "Promo w tym tygodniu", 7, product1.price);
-        offer1.addDiscount();
+        SpecialOffer offer1 = new SpecialOffer(product1, "Promo w tym tygodniu", 7, 0.4);
         product1.showInfo();
-        offer1.ShowOfferInfo();
+        offer1.showOfferInfo();
 
         Product product2 = new Product("Ketchup", 30, "Bardzo ostry, polski", category1);
         product2.showInfo();
@@ -16,8 +15,7 @@ public class Shop {
         product3.showInfo();
 
         Product product4 = new Product("Sos Barbecue", 12, "Amerykanski specjał");
-        product4.noCategoryProductInfo();
-
+        product4.showNoCategProductInfo();
     }
 }
 

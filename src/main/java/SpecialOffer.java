@@ -11,14 +11,13 @@ public class SpecialOffer {
         this.discount = discount;
     }
 
-    double addDiscount() {
-        return discount = product.price * 0.80;
+    double getDiscountPrice() {
+        return product.price - product.price * discount;
     }
 
-    void ShowOfferInfo() {
+    void showOfferInfo() {
         System.out.println("Rabat na produkt 20%");
         System.out.println("Promcja na: " + product.name + "/ Opis: " + description + "/ Czas promocji: " +
-                promotionTime + " dni/ Cena po rabacie: " + discount + "zł" + "\n");
-
+                promotionTime + " dni/ Cena po rabacie: " + getDiscountPrice() + "zł" + "\n");
     }
 }

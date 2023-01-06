@@ -18,13 +18,12 @@ public class Product {
         this.description = description;
     }
 
-
     void showInfo() {
         System.out.println("Produkt: " + name + "/ Cena: " + price + "zł/ Opis: " + description + "/ Kategoria: " +
                 category.name + "/ Opis: " + category.description + "\n");
     }
 
-    void noCategoryProductInfo() {
+    void showNoCategProductInfo() {
         System.out.println("Produkt: " + name + "/ Cena: " + price + "zł/ Opis: " + description + "\n");
 
     }
